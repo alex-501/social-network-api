@@ -14,19 +14,12 @@ const {
 
 //router definition for get/post 
 router
-  .route('/')
-  .get(getAllUsers)
-  .post(createUser);
+  .route('/')  .get(getAllUsers)   .post(createUser);
 
 router
-  .route('/:id')
-  .get(getUserById)
-  .put(updateUser)
-  .delete(deleteUser);
+  .route('/:id') .get(getUserById)  .put(updateUser)  .delete(deleteUser);
 
 router
-  .route('/:userId/friends/:friendId')
-  .put(addFriend)
-  .delete(removeFriend);
+  .route('/:userId/friends/:friendId')  .put(addFriend)  .delete(removeFriend);
 
 module.exports = router; 
