@@ -6,7 +6,7 @@ const {  getAllThoughts, getThoughtById,addThought,
      addReaction, removeReaction
 
      //find the path to thought-controller
-    }=require('../../controllers/thought-controller');
+    }=require('./../../controllers/thought-conroller');
 //routes for  get & post
 
 //use put to update thought
@@ -24,5 +24,7 @@ router
     router
     .route('/:thoughtId/reactions/:reactionId')
     .delete(removeReaction);
+    router.route('/').get(getCallbackFunction).post(postCallbackFunction);
+router.route('/').get(getCallbackFunction).post(postCallbackFunction);
 
 module.exports = router;
