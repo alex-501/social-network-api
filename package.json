@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/alex-501/social-network-api#readme",
   "dependencies": {
-    "node.js": "0.0.1-security"
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.9",
+    "node.js": "0.0.1-security",
+    "sequelize": "^6.6.2"
   }
 }
